@@ -1,8 +1,10 @@
-package sample;
-
-public interface Product
+public abstract class Product
 {
-    public String getName();
-    public double getPrice();
-    public int getQuantity();
+    protected showList showItems;
+
+    protected Product(showList showItems){
+        this.showItems = showItems;
+    }
+
+    public abstract void show();
 }
